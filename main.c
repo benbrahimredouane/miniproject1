@@ -26,37 +26,23 @@ int main()
     total = note1 + note2 + note3 +note4 +note5;
     moyenne = (float) total / 5;
     max = note1;
-    if (max < note2){
-            max =note2;
-              if (max <note3) {
-                max = note3;
-                   if ( max <note4){
-                    max = note4;
-                   }
-                      if (max < note5){
-                        max = note5;
-                      }
-              }
+    max = note1;
+     if (note2 > max) max = note2;
+     if (note3 > max) max = note3;
+     if (note4 > max) max = note4;
+     if (note5 > max) max = note5;
 
 
-    }
+
+    min = note2;
+
     min = note1;
-        if (min > note2){
-            min =note2;
-              if (min > note3) {
-                min = note3;
-                   if ( min > note4){
-                    min = note4;
-                   }
-                      if (min > note5){
-                        min = note5;
-                      }
-              }
+    if (note2 < min) min = note2;
+    if (note3 < min) min = note3;
+    if (note4 < min) min = note4;
+    if (note5 < min) min = note5;
 
-
-    }
-
-    printf("votre rapport global avec tout les informations\n8");
+    printf("\n--- Rapport global ---\n\n");
     printf("votre  total des notes est :%d\n",total);
 
     printf("votre moyenne est :%f\n",moyenne);
