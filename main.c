@@ -25,7 +25,7 @@ int main()
 
     total = note1 + note2 + note3 +note4 +note5;
     moyenne = (float) total / 5;
-    max = note1;
+
     max = note1;
      if (note2 > max) max = note2;
      if (note3 > max) max = note3;
@@ -34,7 +34,7 @@ int main()
 
 
 
-    min = note2;
+
 
     min = note1;
     if (note2 < min) min = note2;
@@ -45,23 +45,23 @@ int main()
     printf("\n--- Rapport global ---\n\n");
     printf("votre  total des notes est :%d\n",total);
 
-    printf("votre moyenne est :%f\n",moyenne);
+    printf("votre moyenne est :%f \n",moyenne);
     printf("la note la plus haute de vous est %d\n",max);
     printf("la note la plus basse de vous est %d\n",min);
 
     if (moyenne >= 90){
             printf("votre mention : A : Excellent\n ");}
-    else if ( moyenne > 90 && moyenne >= 80 ){
+    else if ( moyenne < 90 && moyenne >= 80 ){
             printf("votre mention : B : Tres bien\n ");
 
     }
-    else if( moyenne > 80 && moyenne >= 70 ){
+    else if( moyenne < 80 && moyenne >= 70 ){
             printf("votre mention : C : Bien \n") ;
 
     }
 
-    else if( moyenne > 70 && moyenne >= 60 ){
-            printf("votre mention : C : Bien \n") ;
+    else if( moyenne < 70 && moyenne >= 60 ){
+            printf("votre mention : D : Passable \n") ;
 
     }
 
